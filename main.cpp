@@ -1,16 +1,18 @@
 #include <iostream>
 using namespace std;
 int main() {
-	double a, b, c, v, s;
-	cout << "Vvedite storonu A: ";
-	cin >> a;
-	cout << "Vvedite storonu B: ";
-	cin >> b;
-	cout << "Vvedite storonu C: ";
-	cin >> c;
-	v = a * b * c;
-	s = 2 * (a * b + b * c + a * c);
-	cout << "Ob'yom pryamougol'nogo parallelepipeda: " << v << endl;
-	cout << "Ploshyad' bokovoy poverkhnosti: " << s;
+	float V, U, T1, T2;
+	cout << "V= ";
+	cin >> V;
+	cout << "U= ";
+	cin >> U;
+	cout << "T1= ";
+	cin >> T1;
+	cout << "T2= ";
+	cin >> T2; 
+
+	float S;
+	S = V * T1 + (V - U) * T2;
+	cout << "s=" << S << endl;
 	return 0;
 }
